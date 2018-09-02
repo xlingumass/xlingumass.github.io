@@ -300,6 +300,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#examples-and-resources" title="Examples and resources" class="md-nav__link">
+    Examples and resources
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#praat-scripts" title="Praat scripts" class="md-nav__link">
+    Praat scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r-scripts" title="R scripts" class="md-nav__link">
+    R scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#psychtoolbox-resources" title="PsychToolBox resources" class="md-nav__link">
+    PsychToolBox resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -401,6 +435,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#examples-and-resources" title="Examples and resources" class="md-nav__link">
+    Examples and resources
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#praat-scripts" title="Praat scripts" class="md-nav__link">
+    Praat scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r-scripts" title="R scripts" class="md-nav__link">
+    R scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#psychtoolbox-resources" title="PsychToolBox resources" class="md-nav__link">
+    PsychToolBox resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -422,25 +490,19 @@
                 
                 <hr />
 <h2 id="phoneme-categorization">Phoneme Categorization<a class="headerlink" href="#phoneme-categorization" title="Permanent link">&para;</a></h2>
-<ol>
-<li>In a phoneme categorization experiment, a listener is presented with a single stimulus on each trial, and they have to assign that stimulus to one or another category. It's possible that the listener may be given more than just two categories to choose from but that's rare in the experiments run in our lab.</li>
-<li>Usually, each stimulus is one of a sequence of stimuli that steps incrementally from a good instance of one category to a good instance of another. For example, a stimulus might be drawn from a sequence stepping incrementally from /s/ and /sh/. Steps in this sequence that are distant from both the /s/ and /sh/ endpoints are <em>ambiguous</em> between the categories, and the listener has to guess which category to assign them to. The sequence is often referred to as a "continuum," despite the fact that its members are discrete steps between the endpoints. It's referred to as a continuum because listeners can't reliably distinguish adjacent steps in the sequence from one another.</li>
-<li>
+<p>In a phoneme categorization experiment, a listener is presented with a single stimulus on each trial, and they have to assign that stimulus to one or another category. It's possible that the listener may be given more than just two categories to choose from but that's rare in the experiments run in our lab.</p>
+<p>Usually, each stimulus is one of a sequence of stimuli that steps incrementally from a good instance of one category to a good instance of another. For example, a stimulus might be drawn from a sequence stepping incrementally from /s/ and /sh/. Steps in this sequence that are distant from both the /s/ and /sh/ endpoints are <em>ambiguous</em> between the categories, and the listener has to guess which category to assign them to. The sequence is often referred to as a "continuum," despite the fact that its members are discrete steps between the endpoints. It's referred to as a continuum because listeners can't reliably distinguish adjacent steps in the sequence from one another.</p>
 <p>It's possible to study listeners' categorization of such a continuum without any other independent manipulations, in which case, the questions of interest are:</p>
-</li>
-<li>
-<p>where along the sequence do listeners cross over from assigning stimuli to one category to assigning it the other, </p>
-</li>
+<ul>
+<li>where along the sequence do listeners cross over from assigning stimuli to one category to assigning it the other, </li>
 <li>how abruptly do they cross over, and </li>
 <li>how quickly they respond to each step along the continuum.</li>
-</ol>
+</ul>
 <p><img alt="Categorization of an /s-sh/ continuum" src="" /></p>
-<ol>
-<li>More often, and nearly always in our lab, we also manipulate the context in which the sequence occurs independently to test how differences between contexts influence any of where listeners cross over, how abruptly they do so, and how fast they categorize the stimulus. When we manipulate the context independently like this, the portion of the stimulus in which members of the continuum occur is called the "target."</li>
-<li>When the categorization experiment is actually run, a stimulus is drawn at random from the target continuum or the context+target combinations on each trial and presented to the listener who responds by choosing one or the other category.</li>
-<li>
+<p>More often, and nearly always in our lab, we also manipulate the context in which the sequence occurs independently to test how differences between contexts influence any of where listeners cross over, how abruptly they do so, and how fast they categorize the stimulus. When we manipulate the context independently like this, the portion of the stimulus in which members of the continuum occur is called the "target."</p>
+<p>When the categorization experiment is actually run, a stimulus is drawn at random from the target continuum or the context+target combinations on each trial and presented to the listener who responds by choosing one or the other category.</p>
 <p>Stimuli are constructed in a number of ways. The most typical is described here:</p>
-</li>
+<ul>
 <li>
 <p>Record naturally produced instances of the target categories, in the contexts that you want to manipulate,</p>
 </li>
@@ -458,22 +520,22 @@
 <p>There is one general exception to this procedure in our everyday practice: continua between noisy categories, like the /s-sh/ continuum mentioned above, are produced by adding the original sounds' waveforms together in complementary proportions. For example, the /s/ endpoint would be 1.0 /s/ + 0.0 /sh/, the next step would be 0.9 /s/ + 0.1 /sh/, ..., 0.1 /s/ + 0.9 /sh/, finally to 0.0 /s/ + 1.0 /sh/ at the /sh/ endpoint.</p>
 <p>All these steps are currently carried out using a combination of Praat and R scripts. The most commonly used suite of Praat scripts is included below, along with an example R script. We continue to work toward a routine as opposed to artisanal pipeline for constructing stimuli.</p>
 </li>
-<li>
+</ul>
 <p>Stimulus presentation and response collection is handled with PsychToolBox scripts running in octave. Responses are collected using purpose-built button boxes. An example script with the necessary libraries is also included below. </p>
-</li>
-<li>
 <p>Once the data are collected:</p>
-</li>
-<li>
-<p>the files containing the responses from each listener are compiled,</p>
-</li>
+<ul>
+<li>the files containing the responses from each listener are compiled,</li>
 <li>the data are cleaned up (purging trials with invalid responses, with no response, outlying response times, etc.), </li>
 <li>responses are coded to represent the conditions in the experiment,</li>
 <li>plotted using <code>ggplot</code> and </li>
 <li>modeled using <code>lmer</code> for RTs and <code>glmer</code> for response proportions. </li>
-</ol>
+</ul>
 <p>All this is done in R/RStudio. An example RMarkdown script showing these steps is included below, along with the data files to which it was applied.</p>
 <p>...</p>
+<h2 id="examples-and-resources">Examples and resources<a class="headerlink" href="#examples-and-resources" title="Permanent link">&para;</a></h2>
+<h3 id="praat-scripts">Praat scripts<a class="headerlink" href="#praat-scripts" title="Permanent link">&para;</a></h3>
+<h3 id="r-scripts">R scripts<a class="headerlink" href="#r-scripts" title="Permanent link">&para;</a></h3>
+<h3 id="psychtoolbox-resources">PsychToolBox resources<a class="headerlink" href="#psychtoolbox-resources" title="Permanent link">&para;</a></h3>
                 
                   
                 
