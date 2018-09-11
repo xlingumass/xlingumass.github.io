@@ -2,52 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/phon_info/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/csl_info/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/et_tutorials/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/phon_tutorials/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/ibex_guide/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/irb_guide/</loc>
-     <lastmod>2018-09-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/osf_guide/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/ling-sona/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/osf_guide/</loc>
+     <lastmod>2018-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/RA_guide/</loc>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/resources/</loc>
-     <lastmod>2018-09-02</lastmod>
+     <lastmod>2018-09-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/ling-sona/</loc>
+     <lastmod>2018-09-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
