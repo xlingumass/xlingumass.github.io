@@ -81,7 +81,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#gathering-data" tabindex="1" class="md-skip">
+      <a href="#single-line-reading-experiments" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -282,6 +282,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#single-line-reading-experiments" title="Single line reading experiments" class="md-nav__link">
+    Single line reading experiments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#gathering-data" title="Gathering data" class="md-nav__link">
     Gathering data
   </a>
@@ -321,8 +329,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#analyzing-data" title="Analyzing data" class="md-nav__link">
     Analyzing data
   </a>
@@ -341,6 +349,11 @@
   <a href="#where-to-start" title="Where to start" class="md-nav__link">
     Where to start
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -488,6 +501,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#single-line-reading-experiments" title="Single line reading experiments" class="md-nav__link">
+    Single line reading experiments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#gathering-data" title="Gathering data" class="md-nav__link">
     Gathering data
   </a>
@@ -527,8 +548,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#analyzing-data" title="Analyzing data" class="md-nav__link">
     Analyzing data
   </a>
@@ -547,6 +568,11 @@
   <a href="#where-to-start" title="Where to start" class="md-nav__link">
     Where to start
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -595,6 +621,7 @@
                   <h1>Eyetracking</h1>
                 
                 <hr />
+<h2 id="single-line-reading-experiments">Single line reading experiments<a class="headerlink" href="#single-line-reading-experiments" title="Permanent link">&para;</a></h2>
 <h3 id="gathering-data">Gathering data<a class="headerlink" href="#gathering-data" title="Permanent link">&para;</a></h3>
 <p>...</p>
 <p><details>
@@ -617,7 +644,6 @@
 </div>
 <p>Once you have inserted all breaks in the sentences, take the resulting file (suppose it's called 'annotated_sents.txt'), and use the makeRegions.py file to convert it into a CNT file. From the command line:</p>
 <p><code>python Scripts/makeRegions.py 'annotated_sents.txt'</code></p>
-<p>// i forget what the differences between this v. for_robodoc version are -- do you need to use that one, investigate</p>
 <p>where you pass the name of the file you just made as a command-line argument to makeRegions.py. This should create a file called 'output.reg.txt' in which every line looks like this:</p>
 <pre><code>17 81 6 0 0 24 0 31 0 37 0 46 0 66 0
 (COND#) (ITEM NO.) (NO. REGIONS) (X1START) (Y1START) (X2START) (Y2START) (X3START) (Y3START) ...
@@ -633,7 +659,7 @@
 <p><details>
   <summary>Create a script file to run your eyetracking experiment</summary></p>
 <h4 id="creating-a-script-file-using-scripter2">Creating a script file using Scripter2<a class="headerlink" href="#creating-a-script-file-using-scripter2" title="Permanent link">&para;</a></h4>
-<p>Assuming you have your items in a spreadsheet, creating the script file for eyetracking is simple. You'll need to organize your items as required by Scripter2, all items following this order (the header isn't used, so the naming doesn't matter):</p>
+<p>Assuming you have your items in a spreadsheet, you can use Scripter2 to format them the way the Eyetrack program requires. You'll need to organize your items as required by Scripter2, all items following this order (the header isn't used, so the naming doesn't matter):</p>
 <table>
 <thead>
 <tr>
@@ -669,7 +695,7 @@
 <p><img alt="" src="../images/guide_images/perl_scripter2.png" /> <em>Running Scripter2 from the command line -- this should be the same across operating systems.</em></p>
 <p>You should specify the name of the input and output files, but can simply skip the specifications for x and y if you're not making any display changes. You definitely do want to generate sequences. </p>
 <p>The resulting output file should look similar to this:</p>
-<p><img alt="You now have a .script file with the items!" src="../images/guide_images/unedited_script.png" /> The trial at the top is a key -- before running the script, you should delete it. </p>
+<p><img alt="You now have a .script file with the items!" src="../images/guide_images/unedited_script.png" /> The trial at the top is essentially a key, made from the header -- before running the script, you should delete it. </p>
 <p>In your preferred text editor, copy the following above the items in your script file: </p>
 <pre><code>%BeginHeader
 
@@ -749,13 +775,11 @@ end sentence
 
 <p>Edit the header and variables to match your items, as well as any parameters you'd like to change, such as the gaze condition. When running subjects, set the trigger for <code>trial_type sentence</code> equal to <code>gaze</code>, but if you would like a version of the experiment which doesn't require the participant to hit a gaze box (for your own testing purposes, or so that you don't collect data from certain subjects, for example), set it equal to <code>nogaze</code>. </p>
 <h4 id="controlling-your-lists">Controlling your lists<a class="headerlink" href="#controlling-your-lists" title="Permanent link">&para;</a></h4>
-<p>Open the script file on the host computer connected to the eyetracking machine. You can test the script by opening it in EyeTrack. You should test each condition in your script. See <a href="../link-to-it-on-github">handy dandy randomizer.py Brian did</a> to create your own lists. </p>
-<p>// whoops i forget what the hassle about unix or windows newlines was... reproduce in august</p>
+<p>Open the script file on the host computer connected to the eyetracking machine. You can test the script by opening it in EyeTrack. You should test each condition in your script. See <a href="https://github.com/xlingumass/docs-md/tree/master/resources/scripts/randomize_items">handy dandy randomizer.py Brian did</a> to create your own lists. </p>
 <p></details></p>
 <p><details>
   <summary>Gather data</summary></p>
 <h4 id="running-an-eyetracking-experiment">Running an eyetracking experiment<a class="headerlink" href="#running-an-eyetracking-experiment" title="Permanent link">&para;</a></h4>
-<p>For reference on how to code and run eyetracking experiments, we refer to chapters 1 and 2 in <a href="https://people.umass.edu/eyelab/eyelab%20manual.pdf">this manual</a></p>
 <p>...</p>
 <div class="admonition tip">
 <p class="admonition-title">Things to keep in mind with running logs</p>
@@ -767,42 +791,39 @@ end sentence
 <p>The IRB sometimes asks for number of subjects and their gender at the end of the semester.  Make that easy for yourself.</p>
 </li>
 <li>
-<p>Figure out in advance how you are going to label subjects that leave half way through (maybe you can't track them) and non-native speakers.  Do you rename that file and give the next person that subject number, or do you just go on to the next subject number? Whichever you choose, stay consistent! It helps to document what you do when you do it.</p>
+<p>Figure out in advance how you are going to label subjects that leave half way through (maybe you can't track them) and non-native speakers.  Do you rename that file and give the next person that subject number, or do you just go on to the next subject number? Whichever you choose, stay consistent! Document what you do when you do it.</p>
 </li>
 </ol>
 </div>
-<p>After you've run a participant, save their data file, making sure the filename is 6 characters or less (e.g. EYE002.edf).
-</details></p>
+<p>After you've run a participant, save their data file, making sure the filename is 6 characters or less (e.g. EYE002.edf).</p>
+<p></details></p>
 <h3 id="analyzing-data">Analyzing data<a class="headerlink" href="#analyzing-data" title="Permanent link">&para;</a></h3>
 <p>...</p>
 <p><details>
   <summary>Prepare your data for analysis</summary></p>
 <h4 id="preparing-your-data-for-analysis">Preparing your data for analysis<a class="headerlink" href="#preparing-your-data-for-analysis" title="Permanent link">&para;</a></h4>
 <p>To do anything further with the data, you'll have to convert it from .edf to .asc. On the host computer, open the command line and navigate to the directory with the .edf files in it. <code>edf2asc *.edf</code> creates .asc versions of all the .edf files in that directory. </p>
-<p>//if it's not proprietary or something we should put the edf2asc program up</p>
-<p>We need to parse the .asc files into a series of fixations so that we can use the regioned sentences from earlier. We'll use <a href="https://blogs.umass.edu/eyelab/software/RoboDoc_and_utils.zip">Robodoc</a> to do this. You'll need to edit the parameter file (parameter.txt, in RoboDoc_and_utils/Robodoc) to specify the directory you've stored your .asc files in and the region file you made earlier, as well as to reflect the exclusion criteria you'd like to use. <img alt="image of editing parameters.txt" src="" /></p>
+<p>We need to parse the .asc files into a series of fixations we can match against the regioned sentences from earlier. We'll use <a href="https://blogs.umass.edu/eyelab/software/RoboDoc_and_utils.zip">Robodoc</a> to do this. You'll need to edit the parameter file (parameter.txt, in RoboDoc_and_utils/Robodoc) to specify the directory you've stored your .asc files in and the region file you made earlier, as well as to reflect the exclusion criteria you'd like to use. <img alt="image of editing parameters.txt" src="" /></p>
 <p>Once you've edited the parameters, hop into the command line and run Robodoc: <code>Robodoc.py edited_parameters.txt</code>. <img alt="image of cmd line, etc printouts" src="" /> </p>
 <p>If everything's gone smoothly, you'll have a folder of DA1 files as well as several folders and files detailing what files were processed, excluded, and kept, as well as blink information for each subject.</p>
-<p>It's at this point that we'll use <a href="https://github.com/bdillon/side-eye">SideEye</a> to process the DA1 files into measures we can analyze. </p>
-<p>//install sideeye with pip</p>
+<p>It's at this point that we'll use <a href="https://github.com/amnda-d/sideeye">SideEye</a> to process the DA1 files into measures we can analyze. (Note: SideEye requires Python &gt;= 3.5. It's easiest to install with pip: in Python, <code>pip install sideeye</code>.)</p>
 <p>From the examples folder, copy <code>sample.py</code> and <code>sample_config.json</code> into the directory containing a folder of DA1 files and a .cnt or .reg region file. Open both files in a text editor. Replace the file paths in <code>sample.py</code> with paths to your DA1 and region files. Replace <code>sample_output.csv</code> with whatever you want the output file to be named. Edit <code>sample_config.json</code> to match the parameters needed for your experiment. See the readme.rst for more information.</p>
 <p>The resulting output file should look like this: <img alt="output csv file" src="../images/guide-images/outputcsv.png" /></p>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p><strike>Land sakes alive, we are cooking with petrol now!!</strike></p>
-</div>
 <p></details></p>
 <p><details>
   <summary>Giving the data a <em>first pass</em> </summary></p>
 <h4 id="where-to-start">Where to start<a class="headerlink" href="#where-to-start" title="Permanent link">&para;</a></h4>
 <p>[mentions of best practices]</p>
 <p>[examples of analysis scripts/bare template]</p>
-<p>r test: should be able to link to stuff, right? so <a href="../resources/r_nbtest.html">a link</a></p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p><strike>Land sakes alive, we are cooking with petrol now!!</strike></p>
+</div>
 <p></details></p>
 <h2 id="templates-and-examples">Templates and examples<a class="headerlink" href="#templates-and-examples" title="Permanent link">&para;</a></h2>
 <h4 id="running-logs">Running logs<a class="headerlink" href="#running-logs" title="Permanent link">&para;</a></h4>
 <p><a href="https://docs.google.com/spreadsheets/d/1OJMycWVKSxMyMxGBj2nvOhCwrskPeOB14_XktqZa02Y/edit?usp=sharing">Example running log</a></p>
-<p><a href="https://docs.google.com/spreadsheets/d/1bv9s0dUHXiYGNY4dCKN3pSsaRklXi7rrNmNfvvjcmQk/edit#gid=0">Basic log template</a></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1bv9s0dUHXiYGNY4dCKN3pSsaRklXi7rrNmNfvvjcmQk/edit#gid=0">Example log template</a></p>
                 
                   
                 
