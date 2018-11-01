@@ -20,7 +20,7 @@ pages:
       - Phonetics Lab: phon_info.md
       - Cognitive Science of Language Lab: csl_info.md
   - Guides:
-      - Eyetracking: et_tutorials.md
+      - Eyetracking: et_tutorials.md #really this should get split into more things, but we'll see i guess
       - Phonetics: phon_tutorials.md
       - Ibex Farm: ibex_guide.md
       - IRB: irb_guide.md
