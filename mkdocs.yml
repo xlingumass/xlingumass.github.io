@@ -27,7 +27,7 @@ pages:
       - SONA: ling-sona.md
       - OSF: osf_guide.md
       - RAs: RA_guide.md
-  - Resources: resources.md 
+  - Resources: resources_doc.md 
 
 markdown_extensions:
   - admonition #enables note/warning boxes
