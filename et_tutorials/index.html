@@ -678,8 +678,7 @@
               
                 
                 
-                <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h1 id="eyetracking-guide">Eyetracking Guide<a class="headerlink" href="#eyetracking-guide" title="Permanent link">&para;</a></h1>
+                <h1 id="eyetracking-guide">Eyetracking Guide<a class="headerlink" href="#eyetracking-guide" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="templates-and-examples">Templates and examples<a class="headerlink" href="#templates-and-examples" title="Permanent link">&para;</a></h2>
 <p><strong>Regioned files</strong></p>
@@ -687,6 +686,7 @@
 <p><strong>Running logs</strong></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1OJMycWVKSxMyMxGBj2nvOhCwrskPeOB14_XktqZa02Y/edit?usp=sharing">Example running log</a></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1bv9s0dUHXiYGNY4dCKN3pSsaRklXi7rrNmNfvvjcmQk/edit#gid=0">Example log template</a></p>
+<hr />
 <h2 id="single-line-reading-experiments">Single line reading experiments<a class="headerlink" href="#single-line-reading-experiments" title="Permanent link">&para;</a></h2>
 <h3 id="gathering-data">Gathering data<a class="headerlink" href="#gathering-data" title="Permanent link">&para;</a></h3>
 <h4 id="preparing-to-run">Preparing to run<a class="headerlink" href="#preparing-to-run" title="Permanent link">&para;</a></h4>
@@ -753,7 +753,7 @@
 </tbody>
 </table>
 <p><img alt="&quot;A spreadsheet formatted and ready to use with Scripter2&quot;" src="../images/guide_images/spreadsheet_scripter_items.png" /> <em>Items formatted for use with Scripter2.</em></p>
-<p>For an explanation of the formatting and detailed description of the columns, see chapter 1 of this <a href="https://people.umass.edu/eyelab/eyelab+manual.pdf">manual</a>, written by <a href="https://www.linkedin.com/in/matt-abbott-879b25b8/">Matthew Abbott</a> while he was an undergraduate RA in <a href="http://blogs.umass.edu/astaub/">Adrian Staub's</a> lab.</p>
+<p>For an explanation of the formatting and detailed description of the columns, see chapter 1 of this <a href="https://people.umass.edu/eyelab/eyelab%20manual.pdf">manual</a>, written by <a href="https://www.linkedin.com/in/matt-abbott-879b25b8/">Matthew Abbott</a> while he was an undergraduate RA in <a href="http://blogs.umass.edu/astaub/">Adrian Staub's</a> lab.</p>
 <p>After you export the sheet as a tab-delimited file, it should look something like this:</p>
 <p><img alt="&quot;The tab-delimited file exported from the spreadsheet&quot;" src="../images/guide_images/prepared_scripter_items.png" /> <em>The exported text file to use with Scripter2.</em></p>
 <p>In this example, experimental items have conditions 1-4, questions have condition 100, filler items have condition 200, and filler questions have condition 300. Doublecheck that you've coded the conditions properly, and that questions are marked as dependent on their respective item. </p>
@@ -960,226 +960,7 @@ end SP1I1
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 </div>
-<h1 id="_1"></details><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<hr />
-<h2 id="single-line-reading-experiments_1">Single line reading experiments<a class="headerlink" href="#single-line-reading-experiments_1" title="Permanent link">&para;</a></h2>
-<h3 id="gathering-data_1">Gathering data<a class="headerlink" href="#gathering-data_1" title="Permanent link">&para;</a></h3>
-<p>A thing!</p>
-<p><details>
-  <summary>Region your items</summary></p>
-<h4 id="creating-a-region-file-for-your-items_1">Creating a region file for your items<a class="headerlink" href="#creating-a-region-file-for-your-items_1" title="Permanent link">&para;</a></h4>
-<p>Create a text file of your stimuli, then insert region boundaries using forward slashes. This needs to be done for every line; consider using greps to do this automatically <a href="https://regexr.com/">(see here)</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Regioning conventions</p>
-<ul>
-<li>For a given critical word or words, the whitespace before it is typically included in the region.</li>
-<li>There MUST be a backslash on the final region, before the newline '\n'.</li>
-<li>There is no whitespace before the first word. </li>
-</ul>
-<p>As an example, a regioning of this sentence:</p>
-<pre><code>17 81 Which basketball players is the coach planning to use this season?\n
-</code></pre>
-<p>Might be:</p>
-<pre><code>17 81 /Which basketball players/ is the coach/ planning/ to use this season?/\n
-</code></pre>
-</div>
-<p>Once you have inserted all breaks in the sentences, take the resulting file (suppose it's called 'annotated_sents.txt'), and use the makeRegions.py file to convert it into a CNT file. From the command line:</p>
-<p><code>python Scripts/makeRegions.py 'annotated_sents.txt'</code></p>
-<p>where you pass the name of the file you just made as a command-line argument to makeRegions.py. This should create a file called 'output.reg.txt' in which every line looks like this:</p>
-<pre><code>17 81 6 0 0 24 0 31 0 37 0 46 0 66 0
-(COND#) (ITEM NO.) (NO. REGIONS) (X1START) (Y1START) (X2START) (Y2START) (X3START) (Y3START) ...
-</code></pre>
-<p>For single line experiments, only the XSTART bits matter. In this example, for Item 81, Condition 17, the first region begins at (character) 0 and goes up to but does not include character 24; the second region begins at 24, and goes up to but does not include 31; and so on. </p>
-<div class="admonition attention">
-<p class="admonition-title">Look over your work!</p>
-<p>Errors in regioning are super easy to make, super difficult to notice later on, and mess up your data like crazy. </p>
-<p>Take the output.reg.txt file, and inspect it carefully at this point. Check that every item has the number of regions you expect, and check that they all look right. Sample a couple of lines randomly, and confirm by hand that the region limits in output.reg.txt are indeed what they should be. If you have a very predictable manipulation (e.g you know the region limits in condition 2 should always be one character later than in condition 1), then you should also eyeball all the regions and confirm that they fit the template. </p>
-</div>
-<p>You'll need this (double-checked!) file later on.</p>
 <p></details></p>
-<p><details>
-  <summary>Create a script file to run your eyetracking experiment</summary></p>
-<h4 id="creating-a-script-file-using-scripter2_1">Creating a script file using Scripter2<a class="headerlink" href="#creating-a-script-file-using-scripter2_1" title="Permanent link">&para;</a></h4>
-<p>Assuming you have your items in a spreadsheet, you can use Scripter2 to format them the way the Eyetrack program requires. You'll need to organize your items as required by Scripter2, all items following this order (the header isn't used, so the naming doesn't matter):</p>
-<table>
-<thead>
-<tr>
-<th>Condition</th>
-<th>Item</th>
-<th>Dependent</th>
-<th>Trial Type</th>
-<th>Answer</th>
-<th>Timeout (in ms)</th>
-<th>Sentence 1</th>
-<th>(Sentence 2)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><img alt="&quot;A spreadsheet formatted and ready to use with Scripter2&quot;" src="../images/guide_images/spreadsheet_scripter_items.png" /> <em>Items formatted for use with Scripter2.</em></p>
-<p>For an explanation of the formatting and detailed description of the columns, see chapter 1 of this <a href="https://people.umass.edu/eyelab/eyelab+manual.pdf">manual</a>, written by <a href="https://www.linkedin.com/in/matt-abbott-879b25b8/">Matthew Abbott</a> while he was an undergraduate RA in <a href="http://blogs.umass.edu/astaub/">Adrian Staub's</a> lab.</p>
-<p>After you export the sheet as a tab-delimited file, it should look something like this:</p>
-<p><img alt="&quot;The tab-delimited file exported from the spreadsheet&quot;" src="../images/guide_images/prepared_scripter_items.png" /> <em>The exported text file to use with Scripter2.</em></p>
-<p>In this example, experimental items have conditions 1-4, questions have condition 100, filler items have condition 200, and filler questions have condition 300. Doublecheck that you've coded the conditions properly, and that questions are marked as dependent on their respective item. </p>
-<p>From the command line, navigate to the directory that has scripter2 and your items and then run Scripter2. </p>
-<p><img alt="" src="../images/guide_images/perl_scripter2.png" /> <em>Running Scripter2 from the command line -- this should be the same across operating systems.</em></p>
-<p>You should specify the name of the input and output files, but can simply skip the specifications for x and y if you're not making any display changes. You definitely do want to generate sequences. </p>
-<p>The resulting output file should look similar to this:</p>
-<p><img alt="You now have a .script file with the items!" src="../images/guide_images/unedited_script.png" /> The trial at the top is essentially a key, made from the header -- before running the script, you should delete it. </p>
-<p>In your preferred text editor, copy the following above the items in your script file: </p>
-<pre><code>%BeginHeader
-
-Conditions = E1-4
-Question = E100
-Items 1-48
-
-Fillers
-Condition = F200
-Questions = F300
-Items = 49-119
-
-%EndHeader
-
-set conditions =  5
-set experiments = 2
-set expConditions = 4 1
-set background =  16777215
-set foreground =  0
-set filterMode = 2
-set windowThreshold = 0
-set calibration_type = 0
-set display_type = LCD
-
-trial_type Message
-  text_format =    'Monaco' 12 25 20 20 nonantialiased
-  text_weight =    normal non-italic
-  button =         Y
-  button =         X
-  button =         B
-  button =         A
-  button =         toggle
-  button =         leftTrigger
-  button =         rightTrigger
-  output =         nostream
-  trigger =        nogaze
-  cursor_size =    0
-  dc_delay =       0
-  stimulus_delay = 0
-  revert =         0
-  highlight_color =197148
-end Message
-
-trial_type question
-  text_format =    'Monaco' 12 48 15 268 nonantialiased
-  text_weight =    normal non-italic
-  button =         leftTrigger
-  button =         rightTrigger
-  output =         nostream
-  trigger =        nogaze
-  cursor_size =    0
-  dc_delay =       0
-  stimulus_delay = 0
-  revert =         0
-  highlight_color =1639238
-end question
-
-trial_type sentence
-  text_format =    'Monaco' 11 24 18 315 nonantialiased
-  text_weight =    normal non-italic
-  button =         Y
-  button =         X
-  button =         B
-  button =         A
-  button =         toggle
-  button =         leftTrigger
-  button =         rightTrigger
-  output =         stream
-  trigger =        gaze
-  cursor_size =    0
-  dc_delay =       0
-  stimulus_delay = 0
-  revert =         0
-  highlight_color =2163302
-end sentence
-</code></pre>
-
-<p>Edit the header and variables to match your items, as well as any parameters you'd like to change, such as the gaze condition. When running subjects, set the trigger for <code>trial_type sentence</code> equal to <code>gaze</code>, but if you would like a version of the experiment which doesn't require the participant to hit a gaze box (for your own testing purposes, or so that you don't collect data from certain subjects, for example), set it equal to <code>nogaze</code>. </p>
-<h4 id="controlling-your-lists_1">Controlling your lists<a class="headerlink" href="#controlling-your-lists_1" title="Permanent link">&para;</a></h4>
-<p>Open the script file on the host computer connected to the eyetracking machine. You can test the script by opening it in EyeTrack. You should test each condition in your script. See <a href="https://github.com/xlingumass/docs-md/tree/master/resources/scripts/randomize_items">handy dandy randomizer.py Brian did</a> to create your own lists. </p>
-<p></details></p>
-<p><details>
-  <summary>Gather data</summary></p>
-<h4 id="running-an-eyetracking-experiment_1">Running an eyetracking experiment<a class="headerlink" href="#running-an-eyetracking-experiment_1" title="Permanent link">&para;</a></h4>
-<p>...</p>
-<div class="admonition tip">
-<p class="admonition-title">Things to keep in mind with running logs</p>
-<ol>
-<li>
-<p>Imagine that you need to figure out whether a particular person took your experiment and if so when, but for some reason the consent form with their name on it doesn't have a listed subject number. Can you do it?</p>
-</li>
-<li>
-<p>The IRB sometimes asks for number of subjects and their gender at the end of the semester.  Make that easy for yourself.</p>
-</li>
-<li>
-<p>Figure out in advance how you are going to label subjects that leave half way through (maybe you can't track them) and non-native speakers.  Do you rename that file and give the next person that subject number, or do you just go on to the next subject number? Whichever you choose, stay consistent! Document what you do when you do it.</p>
-</li>
-</ol>
-</div>
-<p>After you've run a participant, save their data file, making sure the filename is 6 characters or less (e.g. EYE002.edf).</p>
-<p></details></p>
-<h3 id="analyzing-data_1">Analyzing data<a class="headerlink" href="#analyzing-data_1" title="Permanent link">&para;</a></h3>
-<p>...</p>
-<p><details>
-  <summary>Prepare your data for analysis</summary></p>
-<h4 id="preparing-your-data-for-analysis_1">Preparing your data for analysis<a class="headerlink" href="#preparing-your-data-for-analysis_1" title="Permanent link">&para;</a></h4>
-<p>To do anything further with the data, you'll have to convert it from .edf to .asc. On the host computer, open the command line and navigate to the directory with the .edf files in it. <code>edf2asc *.edf</code> creates .asc versions of all the .edf files in that directory. </p>
-<p>We need to parse the .asc files into a series of fixations we can match against the regioned sentences from earlier. We'll use <a href="https://blogs.umass.edu/eyelab/software/RoboDoc_and_utils.zip">Robodoc</a> to do this. You'll need to edit the parameter file (parameter.txt, in RoboDoc_and_utils/Robodoc) to specify the directory you've stored your .asc files in and the region file you made earlier, as well as to reflect the exclusion criteria you'd like to use. <img alt="image of editing parameters.txt" src="" /></p>
-<p>Once you've edited the parameters, hop into the command line and run Robodoc: <code>Robodoc.py edited_parameters.txt</code>. <img alt="image of cmd line, etc printouts" src="" /> </p>
-<p>If everything's gone smoothly, you'll have a folder of DA1 files as well as several folders and files detailing what files were processed, excluded, and kept, as well as blink information for each subject.</p>
-<p>It's at this point that we'll use <a href="https://github.com/amnda-d/sideeye">SideEye</a> to process the DA1 files into measures we can analyze. (Note: SideEye requires Python &gt;= 3.5. It's easiest to install with pip: in Python, <code>pip install sideeye</code>.)</p>
-<p>From the examples folder, copy <code>sample.py</code> and <code>sample_config.json</code> into the directory containing a folder of DA1 files and a .cnt or .reg region file. Open both files in a text editor. Replace the file paths in <code>sample.py</code> with paths to your DA1 and region files. Replace <code>sample_output.csv</code> with whatever you want the output file to be named. Edit <code>sample_config.json</code> to match the parameters needed for your experiment. See the readme.rst for more information.</p>
-<p>The resulting output file should look like this: <img alt="output csv file" src="../images/guide-images/outputcsv.png" /></p>
-<p></details></p>
-<p><details>
-  <summary>Giving the data a <em>first pass</em> </summary></p>
-<h4 id="where-to-start_1">Where to start<a class="headerlink" href="#where-to-start_1" title="Permanent link">&para;</a></h4>
-<p>[mentions of best practices]</p>
-<p>[examples of analysis scripts/bare template]</p>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p><strike>Land sakes alive, we are cooking with petrol now!!</strike></p>
-</div>
-<p></details></p>
-<h2 id="templates-and-examples_1">Templates and examples<a class="headerlink" href="#templates-and-examples_1" title="Permanent link">&para;</a></h2>
-<h4 id="running-logs">Running logs<a class="headerlink" href="#running-logs" title="Permanent link">&para;</a></h4>
-<p><a href="https://docs.google.com/spreadsheets/d/1OJMycWVKSxMyMxGBj2nvOhCwrskPeOB14_XktqZa02Y/edit?usp=sharing">Example running log</a></p>
-<p><a href="https://docs.google.com/spreadsheets/d/1bv9s0dUHXiYGNY4dCKN3pSsaRklXi7rrNmNfvvjcmQk/edit#gid=0">Example log template</a></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>49b27257168cb01395b3b75e041713b2119ff21b</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
                 
                   
                 
