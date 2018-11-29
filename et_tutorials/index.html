@@ -686,6 +686,7 @@
 <p><strong>Running logs</strong></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1OJMycWVKSxMyMxGBj2nvOhCwrskPeOB14_XktqZa02Y/edit?usp=sharing">Example running log</a></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1bv9s0dUHXiYGNY4dCKN3pSsaRklXi7rrNmNfvvjcmQk/edit#gid=0">Example log template</a></p>
+<p><strong>Analysis</strong></p>
 <hr />
 <h2 id="single-line-reading-experiments">Single line reading experiments<a class="headerlink" href="#single-line-reading-experiments" title="Permanent link">&para;</a></h2>
 <h3 id="gathering-data">Gathering data<a class="headerlink" href="#gathering-data" title="Permanent link">&para;</a></h3>
@@ -945,21 +946,20 @@ end SP1I1
   <summary>Prepare your data for analysis</summary></p>
 <h4 id="preparing-your-data-for-analysis">Preparing your data for analysis<a class="headerlink" href="#preparing-your-data-for-analysis" title="Permanent link">&para;</a></h4>
 <p>To do anything further with the data, you'll have to convert it from .edf to .asc. On the host computer, open the command line and navigate to the directory with the .edf files in it. <code>edf2asc *.edf</code> creates .asc versions of all the .edf files in that directory. </p>
-<p>We need to parse the .asc files into a series of fixations we can match against the regioned sentences from earlier. We'll use <a href="https://blogs.umass.edu/eyelab/software/RoboDoc_and_utils.zip">Robodoc</a> to do this. You'll need to edit the parameter file (parameter.txt, in RoboDoc_and_utils/Robodoc) to specify the directory you've stored your .asc files in and the region file you made earlier, as well as to reflect the exclusion criteria you'd like to use. <img alt="image of editing parameters.txt" src="" /></p>
-<p>Once you've edited the parameters, hop into the command line and run Robodoc: <code>Robodoc.py edited_parameters.txt</code>. <img alt="image of cmd line, etc printouts" src="" /> </p>
+<p>We need to parse the .asc files into a series of fixations we can match against the regioned sentences from earlier. We'll use <a href="https://blogs.umass.edu/eyelab/software/RoboDoc_and_utils.zip">Robodoc</a> to do this. You'll need to edit the parameter file (parameter.txt, in RoboDoc_and_utils/Robodoc) to specify the directory you've stored your .asc files in and the <a href="https://xlingumass.github.io/et_tutorials/#creating-a-region-file-for-your-items">region file</a> you made, as well as to reflect the exclusion criteria you'd like to use. </p>
+<p>Once you've edited the parameters, hop into the command line and run Robodoc: <code>Robodoc.py edited_parameters.txt</code>. </p>
 <p>If everything's gone smoothly, you'll have a folder of DA1 files as well as several folders and files detailing what files were processed, excluded, and kept, as well as blink information for each subject.</p>
 <p>It's at this point that we'll use <a href="https://github.com/amnda-d/sideeye">SideEye</a> to process the DA1 files into measures we can analyze. (Note: SideEye requires Python &gt;= 3.5. It's easiest to install with pip: in Python, <code>pip install sideeye</code>.)</p>
 <p>From the examples folder, copy <code>sample.py</code> and <code>sample_config.json</code> into the directory containing a folder of DA1 files and a .cnt or .reg region file. Open both files in a text editor. Replace the file paths in <code>sample.py</code> with paths to your DA1 and region files. Replace <code>sample_output.csv</code> with whatever you want the output file to be named. Edit <code>sample_config.json</code> to match the parameters needed for your experiment. See the readme.rst for more information.</p>
-<p>The resulting output file should look like this: <img alt="output csv file" src="../images/guide-images/outputcsv.png" /></p>
+<p>The resulting output file should look like this: <img alt="output csv file" src="../images/guide_images/output-csv.png" /></p>
 <p></details></p>
 <p><details>
   <summary>Giving the data a <em>first pass</em> </summary></p>
 <h4 id="where-to-start">Where to start<a class="headerlink" href="#where-to-start" title="Permanent link">&para;</a></h4>
-<p>[mentions of best practices]</p>
-<p>[examples of analysis scripts/bare template]</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 </div>
+<p><img alt="hehe, gifs" src="../images/variance_veryunts.gif" /></p>
 <p></details></p>
                 
                   
