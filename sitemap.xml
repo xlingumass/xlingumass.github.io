@@ -16,16 +16,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/ling-sona/</loc>
-     <lastmod>2019-07-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/RA_guide/</loc>
-     <lastmod>2019-07-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>/et_tutorials/</loc>
      <lastmod>2019-07-03</lastmod>
      <changefreq>daily</changefreq>
@@ -46,7 +36,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/ling-sona/</loc>
+     <lastmod>2019-07-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/osf_guide/</loc>
+     <lastmod>2019-07-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/RA_guide/</loc>
      <lastmod>2019-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
