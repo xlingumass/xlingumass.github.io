@@ -344,9 +344,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#synthesizing-stimuli" title="Synthesizing Stimuli" class="md-nav__link">
-    Synthesizing Stimuli
+  <a href="#creating-stimuli" title="Creating stimuli" class="md-nav__link">
+    Creating stimuli
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#measuring-acoustic-properties" title="Measuring acoustic properties" class="md-nav__link">
+    Measuring acoustic properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesizing" title="Synthesizing" class="md-nav__link">
+    Synthesizing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -510,9 +530,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#synthesizing-stimuli" title="Synthesizing Stimuli" class="md-nav__link">
-    Synthesizing Stimuli
+  <a href="#creating-stimuli" title="Creating stimuli" class="md-nav__link">
+    Creating stimuli
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#measuring-acoustic-properties" title="Measuring acoustic properties" class="md-nav__link">
+    Measuring acoustic properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesizing" title="Synthesizing" class="md-nav__link">
+    Synthesizing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -636,10 +676,16 @@
   <summary>Soundbooth troubleshooting</summary></p>
 <p>Should you ever need to restart the whole setup, turn everything off, but connect everything from the outside in -- connect the microphone(s) to the interface via its cable, connect the interface to the computer via USB, then turn on the computer and try troubleshooting from there. Make sure that the microphone in the booth is securely plugged in, leading to the interface (the silver box, known to the computer as "MainPre"). The interface has a blue indicator light when it's securely connected and receiving power from the computer. In order for the microphone to pick up sound, we need to supply it the small power necessary to polarize the plates inside: do this by switching the interface's "Phantom Power" on, which should also turn the red phantom power indicator light on. The last step is to make sure the computer has detected the inputs and outputs we'll be using. In Audacity, make sure that "MainPre" is selected for both the input and output, which you can find either in the display or in Edit &gt; Preferences &gt; Devices &gt; Recording or Playback. If you don't see it in the menu, but you're sure it's plugged in, close and reopen Audacity, go to Transport &gt; Rescan Audio Devices, then look again. If you still don't see it, check the computer's sound settings (Preferences &gt; Sound &gt; Recording or Playback). </p>
 <p></details></p>
-<p>You need someone trained to do consistent audio recordings. Record several instances of the sounds you need -- then you can either average them or choose the best token, whatever makes more sense in your scenario [here, a note about stops and whether averaging works for that].</p>
-<p>How to choose the best token with some situational examples</p>
-<h4 id="synthesizing-stimuli">Synthesizing Stimuli<a class="headerlink" href="#synthesizing-stimuli" title="Permanent link">&para;</a></h4>
-<p>[KlaatGrids, revising them to have the right order in R and hopping them out into a .csv for Excel, synthesizing the sounds]</p>
+<p>You need someone trained to do consistent audio recordings. Record several instances of the sounds you need -- then you can either average them or choose the best token, whatever makes more sense in your situation.</p>
+<!-- //a note about how this works with stops specifically -->
+
+<!-- //How to choose the best token with some situational examples -->
+
+<h4 id="creating-stimuli">Creating stimuli<a class="headerlink" href="#creating-stimuli" title="Permanent link">&para;</a></h4>
+<h5 id="measuring-acoustic-properties">Measuring acoustic properties<a class="headerlink" href="#measuring-acoustic-properties" title="Permanent link">&para;</a></h5>
+<h5 id="synthesizing">Synthesizing<a class="headerlink" href="#synthesizing" title="Permanent link">&para;</a></h5>
+<!-- //KlaatGrids, revising them to have the right order in R and hopping them out into a .csv for Excel, synthesizing the sounds -->
+
 <h3 id="nonspeech-sounds">Nonspeech Sounds<a class="headerlink" href="#nonspeech-sounds" title="Permanent link">&para;</a></h3>
 <h2 id="collecting-data">Collecting Data<a class="headerlink" href="#collecting-data" title="Permanent link">&para;</a></h2>
 <p>Stimulus presentation and response collection is handled with PsychToolBox scripts running in octave. Responses are collected using purpose-built button boxes. An example script with the necessary libraries is also included below. </p>
