@@ -11,27 +11,23 @@ theme:
     primary: 'teal'
     accent: 'deep purple'
   #any google fonts font! 
-
-docs_dir: 'docs-md'
-
 pages:
   - Home: index.md
-  - Joint Labs:
+  - Joint Labs: 
       - Phonetics Lab: phon_info.md
       - Cognitive Science of Language Lab: csl_info.md
   - Guides:
-      - Eyetracking: et_tutorials.md #really this should get split into more things, but we'll see i guess
+      - Eyetracking: et_tutorials.md
       - Phonetics: phon_tutorials.md
       - Ibex Farm: ibex_guide.md
-      #- PsychoPy: psychopy_guide.md
       - IRB: irb_guide.md
-      - SONA: ling-sona.md
       - OSF: osf_guide.md
-      - RAs: RA_guide.md
-  - Resources: resources_doc.md 
+      - SONA: ling-sona.md
+  - Resources: resources.md
 
 markdown_extensions:
   - admonition #enables note/warning boxes
+    # for help see https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - toc:
       permalink: true #header permalinks on hover
 
