@@ -1,0 +1,137 @@
+baseURL: "https://xlingumass.github.io"
+title: XLing Labs | UMass
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: XLing Labs | UMass
+  description: "The XLing psycholinguistics page for information and documentation"
+  keywords: [Academic, Blog, Docs, PaperMod]
+  author: XLing Lab Managers
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  enableEmoji: true
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "https://www.umass.edu/favicon.ico"
+    favicon16x16: "https://www.umass.edu/favicon.ico"
+    favicon32x32: "https://www.umass.edu/favicon.ico"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "XLing Labs"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: XLing Laboratories
+    subtitle: "Welcome to XLing Labs @ UMass Amherst!"
+    #imageUrl: "img/UMassAmherst_vert-RGB.png"
+    #imageTitle: UMass Amherst letterhead in black and red serif font. 
+    buttons:
+      - name: Phonetics Lab
+        url: /labs/phonetics/
+      - name: Cognitive Science of Language Lab
+        url: /labs/csl/
+      - name: Grammar and Processing
+        url: /labs/gap/
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome to XLing Labs @ UMass Amherst!"
+    Content: Listed on this website is information on each of the labs. Included in this site is documentation detailing a lot of the processes that keep the labs running.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/xlingumass"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: schedule
+      name: Meeting Schedule
+      url: /schedule/
+      weight: 10
+    - identifier: labs
+      name: Joint Labs
+      url: /labs/
+      weight: 15
+    - identifier: phonetics
+      parent: labs
+    - identifier: docs
+      name: Docs
+      url: /docs/
+      weight: 30
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 40
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
