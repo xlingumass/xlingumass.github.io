@@ -39,14 +39,28 @@ In this document I'm going to break down some of the basic actions you can do to
 
 # Editing an existing page
 
-Editing an existing page is very very easy! Every editable page should have have a button that says ``Suggest Changes`` at the top of the page. When you click that button you will be directed to the website www.github.com[{{<fa arrow-up-right-from-square>}}](http://github.com). Github is what's called a 'version control system' and its job is to make sure that people can easily edit one part of a document or program without making changes to everything else. 
+Editing an existing page is very very easy! Every editable page should have have a button that says `Suggest Changes` at the top of the page. When you click that button you will be directed to the website www.github.com[{{<fa arrow-up-right-from-square>}}](http://github.com). Github is what's called a 'version control system' and its job is to make sure that people can easily edit one part of a document or program without making changes to everything else. 
 
 If you want to suggest changes to a document you should make an account on Github and, when you're ready, you can make your edits in your browser after clicking the edit button:
 
 ![](/img/editpage.png)
 
-Adding text should be easy as pie in markdown, but there are some advanced features that you can use when writing markdown in this environment. If you go to source for this page on Github[{{<fa arrow-up-right-from-square>}}](https://github.com/xlingumass/xlingumass.github.io/content/docs/firstpost.md) now you can see for instance special commmands such as ``[\{\{<fa arrow-up-right-from-square>\}\}](http://github.com)``. These are called shortcodes, and for more information on the general use of Markdown and the use of shortcodes on this website please refer to the markdown style guide [{{<fa link>}}](/docs/mdguide.md).
+Adding text should be easy as pie in markdown, but there are some advanced features that you can use when writing markdown in this environment. If you go to source for this page on Github[{{<fa arrow-up-right-from-square>}}](https://github.com/xlingumass/xlingumass.github.io/blob/master/content/docs/firstpost.md) now you can see for instance special commmands such as `[\{\{<fa arrow-up-right-from-square>\}\}](http://github.com)`. These are called shortcodes, and for more information on the general use of Markdown and the use of shortcodes on this website please refer to the markdown style guide [{{<fa link>}}](/docs/mdguide.md).
 
 After you've added your suggestions to an article file, be sure to fill out and complete the 'commit form' or else your progress will be lost. Once your submission is made your suggestion will be approved and added by your lab manager (be sure to reach out to them as well as commit notifications can get lost in the email box). 
 
 ![](/img/commit.png)
+
+# Adding a new page
+
+Okay, so you've edited some existing files and you wanna move on to bigger and better things. Adding a page is a more advanced task for sure, but it's certainly do-able. You'll need to install Git on your computer console, you can find tutorials on how to do that here[{{<fa arrow-up-right-from-square>}}](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Back on the the Github page for this website you want to find to find the button to 'fork' the project at the top of the page:
+
+![](/img/fork.png)
+
+After you fork the code, your Github account should now have its own copy for the code from the day that you forked it. If you go on your profile for Github you can see all your repositories. You should find the forked repository and copy its link, for example mine is: `https://github.com/tgmorton/xlingumass.github.io`. You'll need that link later. Now that you've installed Git and forked the repository, you're ready to download it and make changes.
+
+To do that go into your terminal and have the link to your forked repository ready. Type the following commands (after `$->`), replacing my fork link with your fork link, into your terminal:
+
+```
+$-> git clone https://github.com/tgmorton/xlingumass.github.io
+```
