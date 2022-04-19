@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Schedules on XLing Labs | UMass</title>
+    <link>https://xlingumass.github.io/schedule/</link>
+    <description>Recent content in Schedules on XLing Labs | UMass</description>
+    <image>
+      <url>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 28 Mar 2022 15:02:15 -0400</lastBuildDate><atom:link href="https://xlingumass.github.io/schedule/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring 2022 Schedule</title>
+      <link>https://xlingumass.github.io/schedule/spring2022/</link>
+      <pubDate>Mon, 28 Mar 2022 15:02:15 -0400</pubDate>
+      
+      <guid>https://xlingumass.github.io/schedule/spring2022/</guid>
+      <description>   UMass Ling Joint Lab Meeting Schedule      Meetings Monday, 5:30PM in N400    February 10 Lakretz et al. 2021   March 3 Brodbeck et al. 2022   March 10 Dell et al. 2021   Spring Break    March 31 Parker 2022   April 14 Toscano et al. 2013   April 28 ** Party **    </description>
+    </item>
+    
+  </channel>
+</rss>

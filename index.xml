@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>XLing Labs | UMass</title>
+    <link>https://xlingumass.github.io/</link>
+    <description>Recent content on XLing Labs | UMass</description>
+    <image>
+      <url>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 28 Mar 2022 15:02:15 -0400</lastBuildDate><atom:link href="https://xlingumass.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phonetics Lab</title>
+      <link>https://xlingumass.github.io/labs/phonetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/phonetics/</guid>
+      <description>The Phonetics Laboratory provides state-of-the-art resources and tools for the study of the acoustics, perception, and neural representations of speech and other sounds.
+The principal focus of our research is how listeners perceive speech, how their perception of speech is influenced by what they know about their language, and how their perception of speech might influence the phonology of their language. We also use electroencephalograpy to study the neural representations of speech sounds.</description>
+    </item>
+    
+    <item>
+      <title>Cognitive Science of Language Lab</title>
+      <link>https://xlingumass.github.io/labs/csl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/csl/</guid>
+      <description>The Cognitive Science of Language Lab studies how readers and listeners recognize the syntactic structure of sentences, and how readers and listeners recognize the meaning of those sentences in context. Specific current projects ask:
+ When, and to what degree, is the Binding Theory applied to constrain the interpretation of pronouns and reflexives? (Currently investigating: English, Romanian, Vietnamese) How do listeners/readers compute verb agreement and pronoun agreement? (Currently investigating: English, Hindi) How do listeners/readers process syntactic ambiguity, adjunct attachment, and filler-gap dependencies?</description>
+    </item>
+    
+    <item>
+      <title>Grammar and Processing Lab</title>
+      <link>https://xlingumass.github.io/labs/gap/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/gap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring 2022 Schedule</title>
+      <link>https://xlingumass.github.io/schedule/spring2022/</link>
+      <pubDate>Mon, 28 Mar 2022 15:02:15 -0400</pubDate>
+      
+      <guid>https://xlingumass.github.io/schedule/spring2022/</guid>
+      <description>   UMass Ling Joint Lab Meeting Schedule      Meetings Monday, 5:30PM in N400    February 10 Lakretz et al. 2021   March 3 Brodbeck et al. 2022   March 10 Dell et al. 2021   Spring Break    March 31 Parker 2022   April 14 Toscano et al. 2013   April 28 ** Party **    </description>
+    </item>
+    
+    <item>
+      <title>About the XLing Labs!</title>
+      <link>https://xlingumass.github.io/blog/labintro/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/blog/labintro/</guid>
+      <description>A little about us and our labs.</description>
+    </item>
+    
+    <item>
+      <title>Notes on IRB</title>
+      <link>https://xlingumass.github.io/docs/irb/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/irb/</guid>
+      <description>Plan well, plan ahead! Your protocol must be submitted, reviewed and approved in writing by the IRB via UMass e-Protocol before you can start a study. IRB approval can take 4-6 weeks and is valid for a maximum period of one year (unless the study was found to be exempt, in which case it’s three years).
+Important deadlines Applications not requiring full board review are reviewed on a rolling basis upon submission of all necessary materials.</description>
+    </item>
+    
+    <item>
+      <title>RA Guide</title>
+      <link>https://xlingumass.github.io/docs/ra/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/ra/</guid>
+      <description>RA Guide Human Subjects training CITI training RAs must complete this online training in order to run human subjects at UMass. Take the Group 2 course; it generally takes about 1-2 hours to finish, though you have the option to save your progress and return to it later. RAs should forward the link to their certificate of completion to the lab manager.
+Psychological and Brain Sciences ethics training Attending PBS ethics training is mandatory for any undergraduates using the Psych pool.</description>
+    </item>
+    
+    <item>
+      <title>Eyetracking Guides</title>
+      <link>https://xlingumass.github.io/docs/eyetracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/eyetracking/</guid>
+      <description>Single line reading experiments Gathering data Creating a region file for your items Create a text file of your stimuli, then insert region boundaries using forward slashes. This needs to be done for every line; consider using greps to do this automatically (see here).
+!!! tip &amp;ldquo;Regioning conventions&amp;rdquo; - For a given critical word or words, the whitespace before it is typically included in the region. - There MUST be a backslash on the final region, before the newline &amp;lsquo;\n&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Ibex Tutorials</title>
+      <link>https://xlingumass.github.io/docs/ibex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/ibex/</guid>
+      <description>The Ibex Farm is a hosted version of the Ibex software, created by Alex Drummond. We do not currently host our own version of the software.
+Before running an Ibex experiment, check:
+  Do you have proper IRB approval?
+  Do you have up-to-date CITI training?
+  First things first: documentation To learn to run an Ibex experiment, check out the following resources:
+ The Ibex manual. This is the authoritative manual on Ibex.</description>
+    </item>
+    
+    <item>
+      <title>OSF</title>
+      <link>https://xlingumass.github.io/docs/osf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/osf/</guid>
+      <description>Open Science Federation</description>
+    </item>
+    
+    <item>
+      <title>Phonetics Guides</title>
+      <link>https://xlingumass.github.io/docs/phonetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/phonetics/</guid>
+      <description>Phoneme Categorization In a phoneme categorization experiment, a listener is presented with a single stimulus on each trial, and they have to assign that stimulus to one or another category. It&amp;rsquo;s possible that the listener may be given more than just two categories to choose from but that&amp;rsquo;s rare in the experiments run in our lab.
+Usually, each stimulus is one of a sequence of stimuli that steps incrementally from a good instance of one category to a good instance of another.</description>
+    </item>
+    
+    <item>
+      <title>Sona</title>
+      <link>https://xlingumass.github.io/docs/sona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/sona/</guid>
+      <description>We schedule sessions and recruit participants via the Linguistics SONA. Participating members of the Linguistics faculty have either given us the rosters of their classes, or given their students the option to create a SONA account and participate in experiments for extra credit or as part of an assignment. Only students may request accounts &amp;ndash; to get an account as a researcher or instructor, email the lab manager.
+For help using SONA, refer to the manual .</description>
+    </item>
+    
+  </channel>
+</rss>

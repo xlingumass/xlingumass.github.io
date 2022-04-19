@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C-Lab on XLing Labs | UMass</title>
+    <link>https://xlingumass.github.io/tags/c-lab/</link>
+    <description>Recent content in C-Lab on XLing Labs | UMass</description>
+    <image>
+      <url>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xlingumass.github.io/tags/c-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cognitive Science of Language Lab</title>
+      <link>https://xlingumass.github.io/labs/csl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/csl/</guid>
+      <description>The Cognitive Science of Language Lab studies how readers and listeners recognize the syntactic structure of sentences, and how readers and listeners recognize the meaning of those sentences in context. Specific current projects ask:
+ When, and to what degree, is the Binding Theory applied to constrain the interpretation of pronouns and reflexives? (Currently investigating: English, Romanian, Vietnamese) How do listeners/readers compute verb agreement and pronoun agreement? (Currently investigating: English, Hindi) How do listeners/readers process syntactic ambiguity, adjunct attachment, and filler-gap dependencies?</description>
+    </item>
+    
+    <item>
+      <title>Eyetracking Guides</title>
+      <link>https://xlingumass.github.io/docs/eyetracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/eyetracking/</guid>
+      <description>Single line reading experiments Gathering data Creating a region file for your items Create a text file of your stimuli, then insert region boundaries using forward slashes. This needs to be done for every line; consider using greps to do this automatically (see here).
+!!! tip &amp;ldquo;Regioning conventions&amp;rdquo; - For a given critical word or words, the whitespace before it is typically included in the region. - There MUST be a backslash on the final region, before the newline &amp;lsquo;\n&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

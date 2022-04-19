@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>P-Lab on XLing Labs | UMass</title>
+    <link>https://xlingumass.github.io/tags/p-lab/</link>
+    <description>Recent content in P-Lab on XLing Labs | UMass</description>
+    <image>
+      <url>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xlingumass.github.io/tags/p-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phonetics Lab</title>
+      <link>https://xlingumass.github.io/labs/phonetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/phonetics/</guid>
+      <description>The Phonetics Laboratory provides state-of-the-art resources and tools for the study of the acoustics, perception, and neural representations of speech and other sounds.
+The principal focus of our research is how listeners perceive speech, how their perception of speech is influenced by what they know about their language, and how their perception of speech might influence the phonology of their language. We also use electroencephalograpy to study the neural representations of speech sounds.</description>
+    </item>
+    
+    <item>
+      <title>Phonetics Guides</title>
+      <link>https://xlingumass.github.io/docs/phonetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/phonetics/</guid>
+      <description>Phoneme Categorization In a phoneme categorization experiment, a listener is presented with a single stimulus on each trial, and they have to assign that stimulus to one or another category. It&amp;rsquo;s possible that the listener may be given more than just two categories to choose from but that&amp;rsquo;s rare in the experiments run in our lab.
+Usually, each stimulus is one of a sequence of stimuli that steps incrementally from a good instance of one category to a good instance of another.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Labs on XLing Labs | UMass</title>
+    <link>https://xlingumass.github.io/labs/</link>
+    <description>Recent content in Labs on XLing Labs | UMass</description>
+    <image>
+      <url>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://xlingumass.github.io/labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phonetics Lab</title>
+      <link>https://xlingumass.github.io/labs/phonetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/phonetics/</guid>
+      <description>The Phonetics Laboratory provides state-of-the-art resources and tools for the study of the acoustics, perception, and neural representations of speech and other sounds.
+The principal focus of our research is how listeners perceive speech, how their perception of speech is influenced by what they know about their language, and how their perception of speech might influence the phonology of their language. We also use electroencephalograpy to study the neural representations of speech sounds.</description>
+    </item>
+    
+    <item>
+      <title>Cognitive Science of Language Lab</title>
+      <link>https://xlingumass.github.io/labs/csl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/csl/</guid>
+      <description>The Cognitive Science of Language Lab studies how readers and listeners recognize the syntactic structure of sentences, and how readers and listeners recognize the meaning of those sentences in context. Specific current projects ask:
+ When, and to what degree, is the Binding Theory applied to constrain the interpretation of pronouns and reflexives? (Currently investigating: English, Romanian, Vietnamese) How do listeners/readers compute verb agreement and pronoun agreement? (Currently investigating: English, Hindi) How do listeners/readers process syntactic ambiguity, adjunct attachment, and filler-gap dependencies?</description>
+    </item>
+    
+    <item>
+      <title>Grammar and Processing Lab</title>
+      <link>https://xlingumass.github.io/labs/gap/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/labs/gap/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
