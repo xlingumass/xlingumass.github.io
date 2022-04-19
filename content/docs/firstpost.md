@@ -1,12 +1,12 @@
 ---
-title: "Adding and Editing Posts"
+title: "Editing and Adding Pages"
 #date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
 tags: [""]
 author: "Thomas Morton"
 # author: ["Me", "You"] # multiple authors
-showToc: true
+showToc: false
 TocOpen: false
 draft: false
 hidemeta: false
@@ -82,4 +82,4 @@ $> git push
 
 If you get an error when attempting to push, type instead `git push -f` to force it. If you mess up the files that's okay! You can always delete your version of the repository and start again.
 
-Once you've pushed to commit to your repository you should see the changes in your fork reflected on the Github website. Once you feel satisfied with the changes you've made you can go back to the Github website and on your forked repository their should be a button that says `contribute` this allows you to submit your changes to be merged in with the main website. Be sure to tell your lab manager after you've done this so they can approve your changes. 
+Once you've pushed to commit to your repository you should see the changes in your fork reflected on the Github website. Once you feel satisfied with the changes you've made you can go back to the Github website and on your forked repository there should be a button that says `contribute` this allows you to submit your changes to be merged in with the main website. Be sure to tell your lab manager after you've done this so they can approve your changes. 
