@@ -27,7 +27,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
 editPost:
-    URL: "https://github.com/xlingumass/xlingumass.github.io/content/blog/labIntro.md"
+    URL: "https://github.com/xlingumass/xlingumass.github.io/content/"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
