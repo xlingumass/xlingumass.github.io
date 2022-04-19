@@ -43,7 +43,7 @@ Editing an existing page is very very easy! Every editable page should have have
 
 If you want to suggest changes to a document you should make an account on Github and, when you're ready, you can make your edits in your browser after clicking the edit button:
 
-![](img/editpage.png)
+{{< figure src="img/editpage.png" alt="picture of github edit button">}}
 
 Adding text should be easy as pie in markdown, but there are some advanced features that you can use when writing markdown in this environment. If you go to source for this page on Github[{{<fa arrow-up-right-from-square>}}](https://github.com/xlingumass/xlingumass.github.io/content/docs/firstpost.md) now you can see for instance special commmands such as ``[\{\{<fa arrow-up-right-from-square>\}\}](http://github.com)``. These are called shortcodes, and for more information on the general use of Markdown and the use of shortcodes on this website please refer to the markdown style guide [{{<fa link>}}](/docs/mdguide.md).
 
