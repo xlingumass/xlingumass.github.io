@@ -4,7 +4,7 @@ date: 2022-03-28T15:02:15-04:00
 hideSummary: true
 draft: false
 editPost:
-    URL: "https://github.com/xlingumass/xlingumass.github.io/content/"
+    URL: "https://github.com/xlingumass/xlingumass.github.io/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
