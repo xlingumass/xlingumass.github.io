@@ -8,7 +8,8 @@
       <url>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://xlingumass.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xlingumass.github.io/tags/p-lab/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://xlingumass.github.io/tags/p-lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Phonetics Lab</title>
       <link>https://xlingumass.github.io/labs/phonetics/</link>
@@ -17,6 +18,15 @@
       <guid>https://xlingumass.github.io/labs/phonetics/</guid>
       <description>The Phonetics Laboratory provides state-of-the-art resources and tools for the study of the acoustics, perception, and neural representations of speech and other sounds.
 The principal focus of our research is how listeners perceive speech, how their perception of speech is influenced by what they know about their language, and how their perception of speech might influence the phonology of their language. We also use electroencephalograpy to study the neural representations of speech sounds.</description>
+    </item>
+    
+    <item>
+      <title>This is new</title>
+      <link>https://xlingumass.github.io/docs/new/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xlingumass.github.io/docs/new/</guid>
+      <description></description>
     </item>
     
     <item>
